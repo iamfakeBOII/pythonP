@@ -46,7 +46,7 @@ for i in range(row, 0, -1):
 		print(j, end = " ")
 	print("")
 """
-
+"""
 x = 7
 for i in range(4, 0, -1):
 	x = 7
@@ -54,9 +54,72 @@ for i in range(4, 0, -1):
 		print(x, end = " ")
 		x -= 2
 	print()
+"""
 
+"""
+x = int(input("rows: "))
+for i in range(0, x):
+	for j in range(0, i + 1):
+		print("*", end = " ")
+	print("")
+"""
+"""
+x = int(input("base: "))
+n = int(input("power: "))
+fsum = 0
+for i in range(0, n + 1):
+	fsum += x**n
+print(fsum)
+"""
+"""
+x = int(input('ENTER THE BASE VALUE: '))
+n = int(input('ENTER THE POWER VALUE: '))
+s = 0
 
+if n%2==0:
+    for a in range(2,n+1,2):
+        f1 = 1
+        for i in range(1,a+1):
+            f1 = f1*i
+        s += (x**a)/f1
 
+    for b in range(3,n,2):
+        f2 = 1
+        for i in range(1,b+1):
+            f2 = f2*i
+        s -= (x**b)/f2 
+else:
+    for a in range(2,n,2):
+        f1 = 1
+        for i in range(1,a+1):
+            f1 = f1*i
+        s += (x**a)/f1
+
+    for b in range(3,n+1,2):
+        f2 = 1
+        for i in range(1,b+1):
+            f2 = f2*i
+        s -= (x**b)/f2
+        
+print(f'THE FINAL ANSWER IS {s+x}')
+"""
+"""
+a = ["a", "b", "c"]
+b = input("char: ")
+for i in a:
+	if(b in a):
+		x = i + 1
+print(x)
+"""
+num = int(input("val: "))
+num1 = 0
+num2 = 1
+series = 0
+for i in range(num):
+	print(series)
+	num1 = num2
+	num2 = series
+	series = num1 + num2
 
 
 
