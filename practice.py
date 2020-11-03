@@ -122,6 +122,7 @@ for i in range(num):
 	num2 = series
 	series = num1 + num2
 """
+"""
 even = 0
 odd = 0
 x = eval(input("list: "))
@@ -133,13 +134,37 @@ for i in range(length):
 		odd = i
 	x[even], x[odd] = x[odd], x[even]
 print(x)
-
-
-
-
-
-
-
+"""
+"""
+rows = int(input("rows: "))
+for i in range(0, rows):
+	for j in range(0, i+1):
+		print("*", end = " ")
+	print()
+"""
+"""
+string = input("str: ")
+l = len(string)
+count = 0
+s = string[::-1]
+for i in range(l):
+	print(string[i],"\t", s[i])
+"""
+vow = "AaEeIiOoUu"
+st = input("str: ")
+v, c, uC, lC = 0, 0, 0, 0
+for i in st:
+	if(i in vow):
+		v += 1
+	else:
+		c += 1
+	for j in range(65, 91):
+		if(i == chr(j)):
+			uC += 1
+	for k in range(97, 123):
+		if(i == chr(k)):
+			lC += 1	
+print(f"Vowels {v}, Consonants {c}, uppercase {uC}, lowercase {lC}")
 
 
 
