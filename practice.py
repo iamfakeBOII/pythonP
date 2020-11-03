@@ -111,6 +111,7 @@ for i in a:
 		x = i + 1
 print(x)
 """
+"""
 num = int(input("val: "))
 num1 = 0
 num2 = 1
@@ -120,8 +121,18 @@ for i in range(num):
 	num1 = num2
 	num2 = series
 	series = num1 + num2
-
-
+"""
+even = 0
+odd = 0
+x = eval(input("list: "))
+length = len(x)
+for i in range(length):
+	if i % 2 == 0:
+		even = i
+	else:
+		odd = i
+	x[even], x[odd] = x[odd], x[even]
+print(x)
 
 
 
