@@ -17,6 +17,7 @@ total.remove(num)
 total.remove(1)
 print("factors are: ", total)
 """
+
 """
 #p3
 limit = int(input("enter upper limit for perfect number search: "))
@@ -150,6 +151,7 @@ s = string[::-1]
 for i in range(l):
 	print(string[i],"\t", s[i])
 """
+"""
 vow = "AaEeIiOoUu"
 st = input("str: ")
 v, c, uC, lC = 0, 0, 0, 0
@@ -165,6 +167,12 @@ for i in st:
 		if(i == chr(k)):
 			lC += 1	
 print(f"Vowels {v}, Consonants {c}, uppercase {uC}, lowercase {lC}")
+"""
+rows = int(input("row: "))
+for i in range(rows+1):
+	for j in range(1, i+1):
+		print(j, end = " ")	
+	print()
 
 
 
