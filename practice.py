@@ -123,7 +123,7 @@ for i in range(num):
 	num2 = series
 	series = num1 + num2
 """
-"""
+
 even = 0
 odd = 0
 x = eval(input("list: "))
@@ -131,11 +131,12 @@ length = len(x)
 for i in range(length):
 	if i % 2 == 0:
 		even = i
-	else:
+	if i % 2 != 0:
 		odd = i
 	x[even], x[odd] = x[odd], x[even]
 print(x)
-"""
+
+
 """
 rows = int(input("rows: "))
 for i in range(0, rows):
@@ -168,15 +169,38 @@ for i in st:
 			lC += 1	
 print(f"Vowels {v}, Consonants {c}, uppercase {uC}, lowercase {lC}")
 """
+"""
 rows = int(input("row: "))
 for i in range(rows+1):
 	for j in range(1, i+1):
 		print(j, end = " ")	
 	print()
+"""
+"""
+l = eval(input("list: "))
+Number = len(l)
+min_index = 0
+max_index = 0
+smallest = largest = l[0]
 
+for j in range(1, Number):
+    if(smallest > l[j]):
+        smallest = l[j]
+        
+    if(largest < l[j]):
+        largest = l[j]
+        
 
+print("smallest: ", smallest)
+print("largest: ", largest)
 
-
+"""
+"""
+l = [1, 2, 3, 4, 5]
+a = float(input("check num: "))
+if(a in l):
+	print(l.index(a))
+"""
 
 
 
