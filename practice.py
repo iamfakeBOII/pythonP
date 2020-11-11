@@ -123,7 +123,7 @@ for i in range(num):
 	num2 = series
 	series = num1 + num2
 """
-
+"""
 even = 0
 odd = 0
 x = eval(input("list: "))
@@ -135,7 +135,7 @@ for i in range(length):
 		odd = i
 	x[even], x[odd] = x[odd], x[even]
 print(x)
-
+"""
 
 """
 rows = int(input("rows: "))
@@ -201,16 +201,57 @@ a = float(input("check num: "))
 if(a in l):
 	print(l.index(a))
 """
+#min value of numbers
+"""
+t = eval(input("tuple: "))
+min = (t[0])
 
-
-
-
-
-
-
+print("min len", min)
+for i in range(len(t)):
+	if((t[i]) <= min):
+		result = t[i]
+print("minium val is", result)
+"""
+#mean of numbers in a list/tuple
+"""
+total = 0
+t = eval(input("tuple: "))
+l = len(t)
+for i in t:
+	total += i
+ftotal = total/l
+print("mean: ", ftotal)
+"""
+#check how many times an inputed element apprers
+"""
+count = 0
+t = eval(input("tuple: "))
+check = eval(input("element to be checked: "))
+for i in t:
+	if(check == i):
+		count += 1
+if(count == 0):
+	print("error\nelement not found")
+else:
+	print("the element", check, "appears", count, "times")
+"""
+#remove duplicate elements from the list
+"""
+t = eval(input("list: "))
+l = []
+for i in t:
+	if i in l:
+		pass
+	else:
+		l.append(i)
+print("updated list: ", l)
+"""
 
 
 
 			
+
+
+
 
 
